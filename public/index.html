@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expense Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <h1>💸 Expense Dashboard</h1>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Total Expense</h3>
+      <p id="total">₹0</p>
+    </div>
+    <div class="card">
+      <h3>Transactions</h3>
+      <p id="count">0</p>
+    </div>
+  </div>
+
+  <div class="form">
+    <input id="title" placeholder="Title">
+    <input id="amount" type="number" placeholder="Amount">
+    <input id="category" placeholder="Category">
+    <input id="date" type="date">
+    <button onclick="addExpense()">Add Expense</button>
+  </div>
+
+  <div class="content">
+    <ul id="list"></ul>
+    <canvas id="chart"></canvas>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<button onclick="addExpense()">Add Expense</button>
+<button onclick="clearAll()" style="background:red;">Reset All</button>
